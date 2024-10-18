@@ -57,7 +57,7 @@ function calculateResult(nextOperator = '') {
             if (currentValue !== 0) {
                 result /= currentValue;
             } else {
-                display.value = 'Erreur'; 
+                display.value = 'Division by zero is not allowed'; 
                 return;
             }
             break;

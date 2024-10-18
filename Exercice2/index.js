@@ -1,18 +1,20 @@
 function calculate(num1, num2, operator) {
+    const number1 = parseFloat(num1);
+    const number2 = parseFloat(num2);
     switch (operator) {
         case '+':
-            return num1 + num2; 
+            return number1 + number2; 
         case '-':
-            return num1 - num2; 
+            return number1 - number2; 
         case '*':
-            return num1 * num2; 
+            return number1 * number2; 
         case '/':
-            if (num2 === 0) {
-                return "Division by zero is not allowed"; 
+            if (number2 === 0) {
+                return 'Division by zero is not allowed'; 
             }
-            return num1 / num2; 
+            return number1 / number2; 
         default:
-            return "Invalid operator"; 
+            return 'Invalid operator'; 
     }
 }
 
